@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100px auto 30px;
+    grid-template-areas:
+        "nav nav"
+        "sidebar main"
+        "footer footer";
+    grid-gap: 1px;
+}
+   
+nav {
+    grid-area: nav;
+    display: flex;
+    /*flex-direction: row;
+    justify-content: space-between;*/
+    font-family: Courier;
+    background-color: #81b3ed;
+    /*width: 100%;*/
+   }
+
+   li {
+    list-style-type: none;
+    margin: 5px;
+    width: 10px;
+    font-family: Courier;
+    text-decoration: solid;
+    font-style: bold;
+    font-size: 24px;
+    color: #0e022d;
+    margin-top: 20px;
+   }
+
+   .nav_bar {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-right: 5px;
+    margin-top: 5px;
+   }
+
+   .navbarx {
+    list-style-type: none;
+    width: 300px;
+    display: inline-flex;
+    font-family: Courier, bold;
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: 35px;
+    height: 40px;
+    margin-left: 10px;
+   }
+
+   .input{
+    shape-image-threshold: initial;
+    background-color: aliceblue;
+    border:#0f032b;
+   }
+
+   .rectangle-button {
+    margin-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    shape-outside: inherit;
+    background-color:navajowhite
+   }
+
+   .rounded-rectangle-button {
+    display:flex;
+    margin-left: 850px;
+    margin-right: 30px;
+    margin-top: 30px;
+    border-radius: 24px;
+    padding: 6px;
+    shape-outside: inherit;
+    shape-rendering: auto;
+    background-color:rgb(206, 240, 17);
+    color:#0f032b;
+    border:#0e022d;
+    border-style: ridge;
+    font-size: 22px;
+    font-family: Georgia;
+    text-align: center;
+   }
+    
+
+   .rectangle2-button {
+    display: inline;
+    margin-left: 900px;
+    max-height: 25px;
+    max-width: 110px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    shape-outside:content-box;
+    shape-rendering: auto;
+    font-family: Georgia;
+    background-color:rgb(17, 3, 97);
+    color:#f7f7f9;
+    border:#7abef2;
+    border-style: ridge;
+    font-size: 20px;
+   }
+
+   .rounded-rectangle2-button {
+    display: inline;
+    margin-left: 60px;
+    max-height: 25px;
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 5px;
+    shape-outside:content-box;
+    shape-rendering: auto;
+    font-family: Georgia;
+    background-color:#7abef2;
+    color:#000000;
+    border:rgb(17, 3, 97);
+    border-style: ridge;
+    font-size: 20px;
+   }
+
+   section {
+    display: flex;
+    padding: 2px;
+    height: 70px;
+   }
+
+   .sidebar {
+    grid-area: sidebar;
+    display: center;
+    text-align: center;
+    background-color:#f2e9a8;
+    align-content:space-evenly;
+    font-family: Courier;
+    font-size: 20px;
+    color:darkblue, bold;
+   }
+
+   h2 {
+    font-size: 22px;
+    color: darkblue, bold;
+   }
+
+   h1 {
+    display: center;
+    font-family: Georgia;
+    font-size: 24px;
+    text-align: center;
+    color:blue, bold;
+   }
+
+   main {
+    grid-area: main;
+    display:center;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    align-content: center;
+    /*width:2000px;*/
+   }
+
+   .img {
+    display:left;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+   }
+   
+   p {
+    display: center;
+    /*width: 960px;*/
+    margin-left: 10px;
+    /*margin-right: 100%;*/
+    font-family: Courier;
+    color:#0e022d;
+    font-size: 20px;
+    text-wrap: wrap;
+    text-align: center;
+   }
+
+   .img {
+    display: center;
+    margin-left: 190px;
+   }
+
+   p2 {
+    font-family: Georgia;
+    font-size: 24px;
+    color:darkblue, bold;
+   }
+
+   .rounded-rectangle4-button {
+    display: center;
+    margin-left: 850px;
+    max-height: 25px;
+    max-width: 300px;
+    border-radius: 35px;
+    padding: 15px;
+    shape-outside:content-box;
+    shape-rendering: auto;
+    font-family: Georgia;
+    background-color:#7abef2;
+    color:#000000;
+    border:rgb(17, 3, 97);
+    border-style: ridge;
+    font-size: 22px;
+   }
+
+   footer {
+    grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: inline;
+    color:#f1f1f1;
+    background-color: #9cd9e9;
+    font-size: 20px;
+   }
+
+   .socialmediaicons {
+    display: inline;
+    size: 15px;
+    color: #f1f1f1;
+    margin-left: 2200px;
+}
